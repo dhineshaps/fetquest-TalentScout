@@ -2,7 +2,13 @@ import streamlit as st
 import requests
 
 st.set_page_config(page_title="Talent Scount")
-st.title("TalentScout")
+
+left_co, cent_co,last_co = st.columns(3)
+#st.title("TalentScout")
+
+with cent_co:
+      new_title = '<p style="font-family:fantasy; color:#DAA520; font-size: 42px;">TalentScout</p>'
+      st.markdown(new_title, unsafe_allow_html=True)
 
 api_key = st.secrets["google"]["api_key"]
 cx = st.secrets["google"]["cx"]
