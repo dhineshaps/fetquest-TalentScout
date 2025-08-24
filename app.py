@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-st.set_page_config(page_title="Talent Scount",layout="wide")
+st.set_page_config(page_title="Talent Scount")
 st.title("TalentScout")
 
 api_key = st.secrets["google"]["api_key"]
